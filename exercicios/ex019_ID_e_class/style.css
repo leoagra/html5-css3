@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id  = em CSS é #
+    em HTML é class = em CSS é .
+
+    id = não se deve usar o id em elemento iguais. deve se usar o class
+
+*/
+
+body {
+    background-color: rgb(173, 245, 179);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+}
+
+h2 {
+    color: rgb(51, 177, 51);
+}
+
+.basico {
+    color: rgb(51, 177, 51);
+}
+
+.interm{
+    color: rgb(233, 230, 37);
+}
+
+.avanc{
+    color: rgb(209, 30, 30);
+}

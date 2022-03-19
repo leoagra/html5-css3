@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasse para links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none; /* tira o sublinhado do link*/
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred; /* links visitados mudam de cor*/
+        }
+
+        .especial {
+            background-color: pink;
+        }
+
+        .especial::after {
+            content: ' ♠';
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline; 
+        }
+
+        a:active {
+            color: blue; /* links ativados mudam de cor*/
+
+/*          SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+
+
+*/
+
+    </style>
+</head>
+<body>
+    <h1>Click nos links abaixo</h1>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        <li><a href="https://www.facebook.com" target="_blank" class="especial">Facebook</a></li>
+        <li><a href="https://www.smartfit.com.br" target="_blank">Smartfit</a></li>
+        <li><a href="https://wwww.globo.com" target="_blank">Globo</a></li>
+    </ul>
+</body>
+</html>
