@@ -13,6 +13,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative; /* grudar cabeçalho*/
         }
         caption {
             font-size: 1.1em;
@@ -29,6 +30,16 @@
             background-color: lightgreen;
             color: darkgreen;
         }
+
+        thead > tr > th { /*grudar cabeçalho*/
+            position: sticky;
+            top: -1px;
+            background-color: lightgreen;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(183, 247, 183);
+        } /* Efeito zebrado. Pode ser odd(impar ou 2n-1) ou even(par ou 2n)*/
 
         .num {
             text-align: right;
